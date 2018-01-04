@@ -1,0 +1,47 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登陆界面</title>
+    <link rel="stylesheet" href="{% static 'semantic/semantic.css' %}">
+{#    <script src="{% static 'jquery.min.js'%}"></script>#}
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="{% static 'semantic/semantic.js' %}"></script>
+    <script src="{% static 'hightchart/Highcharts/code/highcharts.js'%}"></script>
+    <script src="{% static 'hightchart/Highcharts/code/modules/exporting.js' %}"></script>
+    <script src="{% static 'hightchart/Highcharts/code/modules/series-label.js' %}"></script>
+    <script src="{% static 'hightchart/Highcharts/code/modules/oldie.js' %}"></script>
+    <script src="https://img.hcharts.cn/highcharts-plugins/highcharts-zh_CN.js"></script>
+</head>
+<body>
+
+<div class="ui menu" id="test3">
+    <div class="item">Menu</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+</div>
+
+<div class="pusher">
+
+  <div class="ui sidebar inverted vertical menu" id="forfund">
+    <a class="item">
+      1,都是什么内容个
+    </a>
+    <a class="item">
+      2怎么还水平了呢？
+    </a>
+    <a class="item">
+      3
+    </a>
+  </div>
+</div>
+<script>
+    $('#test3')
+  .sidebar('toggle')
+;
+</script>
+
+</body>
+</html>

@@ -17,10 +17,11 @@ Including another URLconf
 from django.conf.urls import url
 from django.contrib import admin
 from apps.fortest1.views import testpage
-
+from apps.fortest1.views import login
 
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^test/',testpage)
+    url(r'^test/',testpage),
+    url(r'^',login)
 ]
